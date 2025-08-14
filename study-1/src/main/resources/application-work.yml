@@ -1,0 +1,13 @@
+spring:
+  config:
+    activate:
+      on-profile: work
+
+  datasource:
+    url: ${WORK_DB_URL:jdbc}
+    username: ${WORK_DB_USER}
+    password: ${WORK_DB_PASS}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect

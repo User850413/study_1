@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc.lob.non_contextual_creation: true
+
+# 기본 프로파일을 굳이 강제하지 않습니다.
+# 필요하면 아래 주석 해제해서 기본을 home으로 둘 수도 있습니다.
+# spring:
+#   profiles:
+#     active: home
+
+logging:
+  level:
+    root: DEBUG
+    org.hibernate.SQL: debug
