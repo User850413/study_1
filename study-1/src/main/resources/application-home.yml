@@ -4,9 +4,9 @@ spring:
       on-profile: home
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/study_1
-    username: username
-    password: password
+    url: ${HOME_DB_URL:jdbc}
+    username: ${HOME_DB_USER}
+    password: ${HOME_DB_PASS}
     driver-class-name: org.postgresql.Driver
 
   jpa:

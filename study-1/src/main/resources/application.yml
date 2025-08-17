@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: home
   jpa:
     show-sql: true
     hibernate:
